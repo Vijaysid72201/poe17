@@ -10,6 +10,7 @@
         <input type="text" name="num"/><br><br>
         <input type="submit" value="Enter"/>
     </form>
+    <h1>Odd numbers</h1>
     <h3>
     <%
     String s=request.getParameter("num");
@@ -21,7 +22,7 @@
        int n=0;
        n=Integer.parseInt(s);
        int j=0;
-       for(j=0;j<n;j++)
+       for(j=0;j<=n;j++)
        {
             if(j%2!=0)
             {
