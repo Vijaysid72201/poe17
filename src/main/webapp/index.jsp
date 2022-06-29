@@ -14,8 +14,8 @@
     <%
     String s=request.getParameter("num");
     %>
-    <% page import="java.io.*"%>
-    <% page import="java.lang.*"%>
+    <%@ page import="java.io.*"%>
+    <%@ page import="java.lang.*"%>
     <h3>
         <%
         int i=0;
