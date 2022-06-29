@@ -1,33 +1,35 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html">
-    <title>Document</title>
-</head>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <h2>Odd range Program</h2>
+    </head>
 <body>
-    <h1>Printing Odd number</h1>
     <form method="get">
-        <label>Enter number</label><br>
+        <h1>Enter a number</h1><br>
         <input type="text" name="num"/><br><br>
-        <input type="submit" value="Enter">
+        <input type="submit" value="Enter"/>
     </form>
     <h3>
     <%
     String s=request.getParameter("num");
+    if(s!=null){
     %>
     <%@ page import="java.io.*"%>
     <%@ page import="java.lang.*"%>
-    <%
-        int i=0;
-        i=Integer.parseInt(s);
-        for(int j=0;j!=i;j++)
-        {
+    <% 
+       int n=0;
+       n=Integer.parseInt(s);
+       int j=0
+       for(j=0;j<n;j++)
+       {
             if(j%2!=0)
             {
                 out.println(j);
             }
-        }
-      %>
+       }
+    %>
     </h3>
 </body>
 </html>
+
