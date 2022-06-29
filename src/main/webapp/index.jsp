@@ -11,13 +11,13 @@
         <input type="text" name="num"/><br><br>
         <input type="submit" value="Enter">
     </form>
+    <h3>
     <%
     String s=request.getParameter("num");
     %>
     <%@ page import="java.io.*"%>
     <%@ page import="java.lang.*"%>
-    <h3>
-        <%
+    <%
         int i=0;
         i=Integer.parseInt(s);
         for(int j=0;j!=i;j++)
@@ -27,7 +27,7 @@
                 out.println(j);
             }
         }
-        %>
+      %>
     </h3>
 </body>
 </html>
