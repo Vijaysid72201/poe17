@@ -20,7 +20,7 @@
     <% 
        int n=0;
        n=Integer.parseInt(s);
-       int j=0
+       int j=0;
        for(j=0;j<n;j++)
        {
             if(j%2!=0)
