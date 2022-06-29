@@ -14,9 +14,9 @@
     <%
     String s=request.getParameter("num");
     %>
-    <% page import="java.io.*" %>
-    <% page import="java.lang.*" %>
-    <h1>
+    <% page import="java.io.*"%>
+    <% page import="java.lang.*"%>
+    <h3>
         <%
         int i=0;
         i=Integer.parseInt(s);
@@ -24,10 +24,10 @@
         {
             if(j%2!=0)
             {
-                out.println(j)
+                out.println(j);
             }
         }
         %>
-    </h1>
+    </h3>
 </body>
 </html>
